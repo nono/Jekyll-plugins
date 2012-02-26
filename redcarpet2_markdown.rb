@@ -33,12 +33,12 @@ class Redcarpet2Markdown < Redcarpet::Render::HTML
 end
 
 class Jekyll::MarkdownConverter
-  def redcarpet_extensions
+  def extensions
     Hash[ *@config['redcarpet']['extensions'].map {|e| [e.to_sym, true] }.flatten ]
   end
 
   def markdown
-    @markdown ||= Redcarpet::Markdown.new(Redcarpet2Markdown, redcarpet_extensions)
+    @markdown ||= Redcarpet::Markdown.new(Redcarpet2Markdown.new(extensions), extensions)
   end
 
   def convert(content)
