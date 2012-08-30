@@ -8,7 +8,7 @@ project directory.
 Redcarpet 2
 -----------
 
-This plugin uses [Redcarpet 2](https://github.com/tanoku/redcarpet) to render
+This plugin uses [Redcarpet 2](https://github.com/vmg/redcarpet) to render
 Markdown, and [pygments](http://pygments.org/) for syntax hightlighting.
 
 Install the redcarpet gem with `gem install redcarpet`.
