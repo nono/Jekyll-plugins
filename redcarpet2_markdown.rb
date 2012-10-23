@@ -11,7 +11,7 @@ class Redcarpet2Markdown < Redcarpet::Render::HTML
     lang = lang || "text"
     path = File.join(PYGMENTS_CACHE_DIR, "#{lang}-#{Digest::MD5.hexdigest code}.html")
     cache(path) do
-      colorized = Albino.colorize(code, lang)
+      colorized = Albino.colorize(code, lang.downcase)
       add_code_tags(colorized, lang)
     end
   end
