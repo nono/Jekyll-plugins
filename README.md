@@ -19,6 +19,8 @@ gem 'redcarpet', '~> 2.3'
 gem 'albino', '~> 1.3'
 ```
 
+And then run `bundle install`.
+
 It's possible to choose the redcarpet that you want to use by adding theses
 lines to the `_config.yml` file:
 
