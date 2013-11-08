@@ -11,7 +11,13 @@ Redcarpet 2
 This plugin uses [Redcarpet 2](https://github.com/vmg/redcarpet) to render
 Markdown, and [pygments](http://pygments.org/) for syntax hightlighting.
 
-Install the redcarpet gem with `gem install redcarpet`.
+You should install the dependencies with bundler. You can add these lines to
+your Gemfile:
+
+```ruby
+gem 'redcarpet', '~> 2.3'
+gem 'albino', '~> 1.3'
+```
 
 It's possible to choose the redcarpet that you want to use by adding theses
 lines to the `_config.yml` file:
